@@ -1,4 +1,4 @@
-# Contador de Cliques com Firebase
+# Clique
 
 Este projeto é uma aplicação React que conta o número de cliques em um botão e registra a data e hora do último clique usando o Firebase Firestore. A aplicação é responsiva, segura, e utiliza variáveis de ambiente para proteger as credenciais do Firebase.
 
