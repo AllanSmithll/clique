@@ -33,6 +33,22 @@ Este projeto é uma aplicação React que conta o número de cliques em um botã
     # ou
     yarn install
 
+## Configuração do Firebase
+
+1. No console do Firebase, vá até Configurações do projeto > Suas apps e copie as credenciais do Firebase.
+
+2. Crie um arquivo .env na raiz do projeto e adicione as credenciais com o prefixo REACT_APP_, conforme abaixo:
+
+   ``` plaintext
+   REACT_APP_FIREBASE_API_KEY=your_api_key_here
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain_here
+   REACT_APP_FIREBASE_PROJECT_ID=your_project_id_here
+   REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket_here
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id_here
+   REACT_APP_FIREBASE_APP_ID=your_app_id_here
+
+3. No Firestore, crie uma coleção chamada clicks e um documento chamado clicksCount com um campo clicks (inicialize com 0).
+
 ## Uso
 
 1. Inicie o servidor de desenvolvimento:
