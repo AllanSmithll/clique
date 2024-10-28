@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Contador de Cliques com Firebase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação React que conta o número de cliques em um botão e registra a data e hora do último clique usando o Firebase Firestore. A aplicação é responsiva, segura, e utiliza variáveis de ambiente para proteger as credenciais do Firebase.
 
-## Available Scripts
+## Índice
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Configuração do Firebase](#configuração-do-firebase)
+- [Uso](#uso)
+- [Scripts Disponíveis](#scripts-disponíveis)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
 
-In the project directory, you can run:
+## Pré-requisitos
 
-### `npm start`
+- Node.js e npm (ou yarn)
+- Conta no [Firebase](https://firebase.google.com/) com um projeto configurado
+- Firestore habilitado no seu projeto Firebase
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instalação
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone este repositório:
 
-### `npm test`
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Instale as Dependências
 
-### `npm run build`
+    ``` bash
+    npm install
+    # ou
+    yarn install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Uso
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Inicie o servidor de desenvolvimento:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ``` bash
+    npm start
+    # ou
+    yarn start
 
-### `npm run eject`
+2. Acesse http://localhost:3000 no navegador.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Clique no botão Clique Aqui para aumentar o contador de cliques. A contagem de cliques e a data/hora do último clique serão atualizados em tempo real.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Scripts Disponíveis
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+No diretório do projeto, você pode executar:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- npm start: Executa a aplicação em modo de desenvolvimento.
+- npm run build: Cria o build de produção na pasta build.
 
-## Learn More
+## Tecnologias Utilizadas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React — Biblioteca para criação de interfaces de usuário.
+- Firebase — Backend-as-a-Service para autenticação e banco de dados em tempo real.
+- Firestore — Banco de dados NoSQL para armazenamento de dados.
+- CSS — Estilização da interface.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contribuição
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature (git checkout -b feature/nome-da-feature).
+3. Commit suas alterações (git commit -m 'Adicionei uma nova feature').
+4. Faça o push para a branch (git push origin feature/nome-da-feature).
+5. Abra um Pull Request.

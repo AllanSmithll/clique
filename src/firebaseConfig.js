@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDOjkZd8rzPcgl1ab9b9RkCkSJbfb43Fl8",
-  authDomain: "clique-564bb.firebaseapp.com",
-  projectId: "clique-564bb",
-  storageBucket: "clique-564bb.appspot.com",
-  messagingSenderId: "100200666101",
-  appId: "1:100200666101:web:cf7760c5d7dc179e6e86bc"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
